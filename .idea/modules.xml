@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/RecipesMaker.iml" filepath="$PROJECT_DIR$/RecipesMaker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/RecipesMaker.iml" filepath="$PROJECT_DIR$/.idea/RecipesMaker.iml" />
     </modules>
   </component>
 </project>

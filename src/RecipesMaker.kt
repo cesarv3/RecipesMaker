@@ -1,3 +1,5 @@
+import model.*
+
 fun main(args: Array<String>)
 {
     do {
@@ -5,8 +7,8 @@ fun main(args: Array<String>)
         val response: String? = readLine()
         when(response)
         {
-            "1" -> println("Hacer una receta")
-            "2" -> println("Ver mis recetas")
+            "1" -> println(makeRecipe())
+            "2" -> viewRecipe()
             "3" -> println("Adios")
             else -> println("Opcion invalida")
         }
@@ -21,7 +23,7 @@ fun mostrarMenu()
             "3. Salir")
 }
 
-fun makeRecipe(){
+fun makeRecipe():String{
     println("Selecciona por categoria el ingrediente que buscas\n" +
             "1.Agua\n" +
             "2. Leche\n" +
@@ -31,6 +33,19 @@ fun makeRecipe(){
             "6. Cereal\n" +
             "7. Huevos\n" +
             "8. Aceites\n")
+
+   return when(readLine())
+    {
+        "1" ->  Agua(1).toString()
+        "2" ->  Lacteos(2).toString()
+        "3" ->  Carnes(3).toString()
+        "4" ->  Verduras(4).toString()
+        "5" ->  Fruta(5).toString()
+        "6" ->  Cereal(6).toString()
+        "7" ->  Carnes(7).toString()
+        "8" ->  Aceites(8).toString()
+        else ->  "Opcion invalida"
+    }
 }
 
 fun viewRecipe(){
