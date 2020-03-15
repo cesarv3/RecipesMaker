@@ -1,7 +1,9 @@
 package model
 
-abstract class Ingrediente(var cantidad: Int) {
+ class Ingrediente(var nombre: String, var cantidad: Int) {
+
+
     override fun toString(): String {
-        return "Cantidad: $cantidad\n"
+        return "Nombre: $nombre  Cantidad: $cantidad\n"
     }
 }
